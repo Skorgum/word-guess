@@ -54,10 +54,10 @@ var game = {
     },
 // additional variable declarations
 
-// code logic to pick answer at random
+// code logic to pick answer at random & populate the answer array
 
-
+// code logic to match user input with letters in answer array
     
 },
 
-// the game will be started via an onclick event.  Here is where that code will go; outside the game object
+// the game will be started via an onclick event linked to button.  Here is where that code will go; outside the game object
