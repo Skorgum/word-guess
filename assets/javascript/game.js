@@ -48,7 +48,7 @@ var game = {
         },
         outkast: {
             picture: "",
-            song: "",
+            song: "Jazzy Belle",
             youTubeLink: "https://www.youtube.com/watch?v=IW-9eOPAWdA"
         }
     },
@@ -60,4 +60,11 @@ var game = {
     
 },
 
-// the game will be started via an onclick event linked to button.  Here is where that code will go; outside the game object
+// the game will be started via an onclick event linked to button, after the trademark Flava Flav "Yeah Boyyeee! is played".  Here is where that code will go; outside the game object
+
+var yeahBoy = document.createElement("audio");
+yeahBoy.setAttribute("src", "../sounds/Yeah_Boy_Start.mp3");
+
+document.getElementById("#start-button").addEventListener("click", function() {
+    yeahBoy.play();
+})
