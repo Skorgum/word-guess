@@ -1,3 +1,5 @@
+console.log("File is linked properly");
+
 var game = {
     answers: {
         // youTubeLink is a placeholder.  Finished product will play mp3 files from ../assets/sounds
@@ -62,25 +64,7 @@ var game = {
 
 // the game will be started via an onclick event linked to button, after the trademark Flava Flav "Yeah Boyyeee! is played".  Here is where that code will go; outside the game object
 
-// var yeahBoy = document.createElement("audio");
-// yeahBoy.setAttribute("src", "../sounds/Yeah_Boy_Start.mp3");
-
-// function placeholder() {
-// document.getElementById("start-button").addEventListener("click", function() {
-//     alert("hi")
-//     yeahBoy.play();
-
-// })
-// }
-
-
-function placeHolder() {
-    alert("hi")
+var yeahBoy = document.getElementById("yeahBoy");
+function gameStart() {
+yeahBoy.play();
 }
-placeHolder();
-
-document.getElementById("start-button").addEventListener("click", placeHolder());
-
-document.getElementById("myBtn").addEventListener("click", function(){
-    document.getElementById("demo").innerHTML = "Hello World";
-  });
