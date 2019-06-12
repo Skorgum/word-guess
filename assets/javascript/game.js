@@ -58,7 +58,7 @@ var game = {
 
 // code logic to match user input with letters in answer array
     
-},
+};
 
 // the game will be started via an onclick event linked to button, after the trademark Flava Flav "Yeah Boyyeee! is played".  Here is where that code will go; outside the game object
 
