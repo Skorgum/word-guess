@@ -4,52 +4,52 @@ var game = {
     answers: {
         // youTubeLink is a placeholder.  Finished product will play mp3 files from ../assets/sounds
         tupac: {
-            picture: "",
+            artistName: "Tupac",
             song: "California Love",
             youTubeLink: "https://www.youtube.com/watch?v=J7_bMdYfSws"
         },
         coolio: {
-            picture: "",
+            artistName: "Coolio",
             song: "Gangsta's Paradise",
             youTubeLink: "https://www.youtube.com/watch?v=fPO76Jlnz6c"
         },
         wuTangClan: {
-            picture: "",
+            artistName: "Wu Tang Clan",
             song: "Protect Ya Neck",
             youTubeLink: "https://www.youtube.com/watch?v=R0IUR4gkPIE"
         },
         lLCoolJ: {
-            picture: "",
+            artistName: "LL Cool J",
             song: "Mama Said Knock You Out",
             youTubeLink: "https://www.youtube.com/watch?v=vimZj8HW0Kg"
         },
         beastieBoys: {
-            picture: "",
+            artistName: "The Beastie Boys",
             song: "Sabotage",
             youTubeLink: "https://www.youtube.com/watch?v=z5rRZdiu1UE"
         },
         snoopDogg: {
-            picture: "",
+            artistName: "Snoop Dogg",
             song: "Gin & Juice",
             youTubeLink: "https://www.youtube.com/watch?v=DI3yXg-sX5c"
         },
         drDre: {
-            picture: "",
+            artistName: "Dr Dre",
             song: "Nuthin' but a 'G' Thang",
             youTubeLink: "https://www.youtube.com/watch?v=GPa59XcS6pQ"
         },
         pharcyde: {
-            picture: "",
+            artistName: "The Pharcyde",
             song: "Passing Me By",
             youTubeLink: "https://www.youtube.com/watch?v=48OYTEZQR9U"
         },
         biggieSmalls: {
-            picture: "",
+            artistName: "The Notorious B.I.G.",
             song: "Hypnotize",
             youTubeLink: "https://www.youtube.com/watch?v=wk4ftn4PArg"
         },
         outkast: {
-            picture: "",
+            artistName: "OutKast",
             song: "Jazzy Belle",
             youTubeLink: "https://www.youtube.com/watch?v=IW-9eOPAWdA"
         }
