@@ -62,9 +62,25 @@ var game = {
 
 // the game will be started via an onclick event linked to button, after the trademark Flava Flav "Yeah Boyyeee! is played".  Here is where that code will go; outside the game object
 
-var yeahBoy = document.createElement("audio");
-yeahBoy.setAttribute("src", "../sounds/Yeah_Boy_Start.mp3");
+// var yeahBoy = document.createElement("audio");
+// yeahBoy.setAttribute("src", "../sounds/Yeah_Boy_Start.mp3");
 
-document.getElementById("#start-button").addEventListener("click", function() {
-    yeahBoy.play();
-})
+// function placeholder() {
+// document.getElementById("start-button").addEventListener("click", function() {
+//     alert("hi")
+//     yeahBoy.play();
+
+// })
+// }
+
+
+function placeHolder() {
+    alert("hi")
+}
+placeHolder();
+
+document.getElementById("start-button").addEventListener("click", placeHolder());
+
+document.getElementById("myBtn").addEventListener("click", function(){
+    document.getElementById("demo").innerHTML = "Hello World";
+  });
