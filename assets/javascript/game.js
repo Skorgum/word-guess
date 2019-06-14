@@ -55,6 +55,7 @@ var answers = {
     }
     };
 // additional variable declarations
+var answerList = ["tupac", "coolio", "wutangclan", "llcoolj", "beastieboys", "snoopdogg", "drdre", "pharcyde", "biggiesmalls", "outkast"]
 var chosenWord = "";
 var lettersInChosenWord = [];
 var blanks = 0;
@@ -67,9 +68,26 @@ var yeahBoy = document.getElementById("yeahBoy");
 
 // Game started via jumbotron button.  Function will select an answer at random, reset letters & guess count
 function gameStart() {
-yeahBoy.play();
-guessCounter = 9;
-// Is an additional array containing the answer names required?
-chosenWord = answers[Math.floor(Math.random() * answers.length)];
-console.log(chosenWord);
+    yeahBoy.play();
+
+    guessCounter = 9;
+
+    chosenWord = answerList[Math.floor(Math.random() * answerList.length)];
+    console.log(chosenWord);
+
+    lettersInChosenWord = chosenWord.split("");
+    console.log(lettersInChosenWord);
+
+    numBlanks = lettersInChosenWord.length;
+    console.log(numBlanks);
+
+    blanksAndCorrectLetters = [];
+
+    wrongLetters = [];
+
+    for (var i = 0; i < numBlanks; i++) {
+        blanksAndCorrectLetters.push("_");
+    }
+    console.log(blanksAndCorrectLetters);
+    
 }
