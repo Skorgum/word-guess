@@ -86,8 +86,14 @@ function gameStart() {
     wrongLetters = [];
 
     for (var i = 0; i < numBlanks; i++) {
-        blanksAndCorrectLetters.push("_");
+        blanksAndCorrectLetters.push("_ ");
     }
     console.log(blanksAndCorrectLetters);
+    
+    document.getElementById("guesses-remaining").innerHTML = guessCounter;
+
+    document.getElementById("word-blanks").innerHTML = blanksAndCorrectLetters.join("");
+
+    document.getElementById("wrong-letters").innerHTML = wrongLetters.join("");
     
 }
