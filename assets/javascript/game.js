@@ -125,8 +125,6 @@ function checkLeters(letter) {
 
 function letterChosen() {
 
-    //  (*WIP*) this code will run after every letter guess.  Last section of code required for game to run
-
     console.log("WinCount: " + winCounter + " | LossCount: " + lossCounter + " | NumGuesses: " + guessCounter);
 
     document.getElementById("guesses-remaining").innerHTML = guessCounter;
@@ -141,6 +139,8 @@ function letterChosen() {
         alert("You win!");
 
         document.getElementById("wins").innerHTML = winCounter;
+
+        // here is where the associated YouTube video will append to #reward span 
     }
 
     else if (guessCounter === 0) {
