@@ -55,10 +55,10 @@ var answers = {
     }
     };
 // additional variable declarations
-var answerList = ["tupac", "coolio", "wutangclan", "llcoolj", "beastieboys", "snoopdogg", "drdre", "pharcyde", "biggiesmalls", "outkast"]
+var answerList = ["TUPAC", "COOLIO", "WUTANGCLAN", "LLCOOLJ", "BEASTIEBOYS", "SNOOPDOGG", "DRDRE", "PHARCYDE", "BIGGIESMALLS", "OUTKAST"]
 var chosenWord = "";
 var lettersInChosenWord = [];
-var blanks = 0;
+var numBlanks = 0;
 var blanksAndCorrectLetters = [];
 var wrongLetters = [];
 var winCounter = 0;
@@ -88,6 +88,7 @@ function gameStart() {
     for (var i = 0; i < numBlanks; i++) {
         blanksAndCorrectLetters.push("_ ");
     }
+    
     console.log(blanksAndCorrectLetters);
     
     document.getElementById("guesses-remaining").innerHTML = guessCounter;
@@ -97,3 +98,39 @@ function gameStart() {
     document.getElementById("wrong-letters").innerHTML = wrongLetters.join("");
     
 }
+
+function checkLeters(letter) {
+    var letterInWord = false;
+
+    for (var i = 0; i < numBlanks; i++) {
+        if (chosenWord[i] === letter) {
+            letterInWord = true;
+        }
+    }
+
+    if (letterInWord) {
+        for (var j = 0; j < numBlanks; j++) {
+            if (chosenWord[j] === letter) {
+                blanksAndCorrectLetters[j] = letter;
+            }
+        }
+        console.log(blanksAndCorrectLetters);
+    }
+
+    else {
+        wrongLetters.push(letter);
+        guessCounter--
+    }
+}
+
+function letterChosen() {
+        //  (*WIP*) this code will run after every letter guess.  Last section of code required for game to run
+}
+
+document.onkeyup = function(event) {
+    if (event.keyCode >= 65 && event.keyCode <= 90) {
+        var letterGuessed = event.key.toUpperCase();
+        checkLeters(letterGuessed);
+        letterChosen();
+    }
+};
